@@ -13,7 +13,7 @@ parent.prepend(select);
 
 async function loadFile() {
  select.setAttribute("id", "listPicker");
- await fetch('https://vanoos.ucoz.net/file.txt') // загрузка файла file.txt
+ await fetch('./file.txt') // загрузка файла file.txt
  .then(response => response.text())
  .then(data => {
  let lines = data.split(/\r?\n/); // разбиваем на строки по новой строке
