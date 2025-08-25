@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,11 +7,37 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+     <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.1.1/dist/model-viewer.min.js" type="module"></script>
   </head>
   <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <script src="index.js"></script>
+   <div id="parent" class="centered-container">
+
+<h1 id="Header">Header</h1>
+ <div class="centered-container">
+ <div class="column is-mobile is-centered">
+ <model-viewer id="modelviewer" style="height: 80vh; width: 100vw;"
+ rotation-per-second="10deg"
+ src="./textured_mesh.glb" disable-tap
+ environment-image="neutral"
+ camera-target="0m 0m 0m"
+ camera-orbit="0deg 90deg 12m"
+ orientation="0deg 0deg 0deg"
+ shadow-intensity=".9"
+ ar auto-rotate
+ camera-controls>
+ </model-viewer>
+ </div>
+
+ <div class="modelviewer-panel-button-container">
+ <div id="appearance-button" class="modelviewer-panel-button small checked" onclick="showTexture()">
+ Appearance
+ </div>
+ <div id="geometry-button" class="modelviewer-panel-button small" onclick="hideTexture()">Geometry</div>
+ </div>
+ </div>
+</div>
+
+<script src="./script.js"/>
+
   </body>
 </html>
