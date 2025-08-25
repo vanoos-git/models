@@ -1,4 +1,5 @@
 3ddd_lamp
+bulochka
 uaz
 wendy
 3ddd_chair
