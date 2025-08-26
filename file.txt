@@ -1,6 +1,7 @@
 3ddd_lamp
 bulochka
 uaz
+uaz_sparc3d
 wendy
 3ddd_chair
 man
