@@ -1,6 +1,7 @@
 HUNYUAN
 MESHY
 RODIN
+TRIPO3D
 3ddd_lamp
 bulochka
 uaz
